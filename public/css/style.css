@@ -626,6 +626,42 @@ p{
     background-color: var(--e-global-color-accent);
     color: var(--e-global-color-white);
 }
+
+/* detail wisata */
+.virtual_employee_content_detail {
+    padding-left: 42px;
+    /* padding-top: 160px; */
+}
+.virtual_employee_content_detail h6 {
+    color: var(--e-global-color-white);
+    letter-spacing: 2.8px;
+    margin-bottom: 16px;
+}
+.virtual_employee_content_detail h2 {
+    margin-bottom: 16px;
+    color: var(--e-global-color-white);
+}
+.virtual_employee_content_detail p{
+    color: var(--e-global-color-white);
+    margin-bottom: 32px;
+}
+.virtual_employee_content_detail .btn_wrapper .get_started_btn {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 19px;
+    padding: 22px 58px;
+    text-align: center;
+    color: var(--e-global-color-primary);
+    display: inline-block;
+    background-color: var(--e-global-color-white);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.virtual_employee_content_detail .btn_wrapper .get_started_btn:hover {
+    background-color: var(--e-global-color-accent);
+    color: var(--e-global-color-white);
+}
+
 .virtual_employee-section .virtual_employee_left_icon{
     position: absolute;
     top: 295px;
@@ -699,7 +735,7 @@ p{
     margin-bottom: 10px;
 }
 .case_studies_box p{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     color: var(--e-global-color-text);
     font-weight: 400;

@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
         
 
         User::create([
-            'name' => 'ekoselter',
-            'username' => 'ekoselter',
+            'name' => 'admin',
+            'username' => 'admin',
             'email' => 'ekoselter@gmail.com',
             'password' => bcrypt('12345')
         ]); 
@@ -31,19 +31,19 @@ class DatabaseSeeder extends Seeder
         //     'password' => bcrypt('54321')
         // ]); 
 
-        User::factory(3)->create();
+        // User::factory(3)->create();
 
-        Category::create([
-            'name' => 'Wisata Kuliner',
-            'slug' => 'wisata-kuliner',
-        ]); 
+        // Category::create([
+        //     'name' => 'Wisata Kuliner',
+        //     'slug' => 'wisata-kuliner',
+        // ]); 
 
-        Category::create([
-            'name' => 'Wisata Alam',
-            'slug' => 'wisata-alam'
-        ]);
+        // Category::create([
+        //     'name' => 'Wisata Alam',
+        //     'slug' => 'wisata-alam'
+        // ]);
 
-        Post::factory(20)->create();
+        // Post::factory(20)->create();
 
         // Post::create([
         //     'title' => 'Judul Pertama',

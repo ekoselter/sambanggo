@@ -9,14 +9,20 @@
           </li>
           <li class="nav-item">
             <a class="nav-link {{ Request::is('dashboard/posts*') ? 'active' : ''  }}" href="{{ url('') }}/dashboard/posts">
-              <span data-feather="file-text"></span>
+              <span data-feather="instagram"></span>
               My Posts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{ Request::is('dashboard/events*') ? 'active' : ''  }}" href="{{ url('') }}/dashboard/events">
+              <span data-feather="file-text"></span>
+              Event
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link {{ Request::is('dashboard/categories*') ? 'active' : ''  }}" href="{{ url('') }}/dashboard/categories">
               <span data-feather="grid"></span>
-              Posts Categories
+              Categories
             </a>
           </li>
         </ul>

@@ -63,10 +63,26 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-md-left text-center">
                         <div class="banner-section-content">
                             <h1 data-aos="fade-up" style="color:#35cf20">Sambanggo</h1>
-                            <p data-aos="fade-right" style="color:#70eefc">Gerakan “Sambanggo” yang bisa diartikan “Sambang Kulon Progo”. Gerakan “Sambanggo” bisa juga diartikan “Sambang Monggo” juga bisa dimaknai Sambang Ga(huruf jawa) yakni Gisik, Gawe dan Gunung.</p>
+                            <p data-aos="fade-right" style="color:#93eef8">
+                                {{-- Sambanggo atau sambang Kulon Progo adalah sebuah gerakan mengajak wisatawan untuk berkunjung atau menikmati berbagai obyek wisata yang ada di Kabupaten  Kulon Progo 
+
+                                Baik Sambang Gisik, Sambang Gawe, maupun Sambang Gunung.
+
+                                Sambang Gisik : wisatawan diajak mengunjungi destinasi wisata di wilayah sepanjang pantai Kulon Progo.  
+
+                                Sambang Gawe : wisatawan diajak mengunjungi atau menikmati berbagai produk ekonomi kreatif yang ada di Kulon Progo.
+
+                                Sambang Gunung : wisatawan diajak mengunjungi destinasi wisata yang ada di wilayah pegunungan atau perbukitan.
+
+                                Wisatawan juga dapat berkunjung ke berbagai destinasi wisata yang ada di Kulon Progo maupun ke 24 Desa Wisata.
+
+
+                                Ayo berkunjung ke Kulon Progo
+                                Sambanggo!!! --}}
+                            </p>
                             <div class="btn_wrapper" data-aos="fade-up">
-                                <a class="text-decoration-none getstarted_btn" href="./index.html">Calender Of Event</a>
-                                <a class="text-decoration-none aboutus_btn" href="./about.html">Maps</a>
+                                <a class="text-decoration-none getstarted_btn" href="{{ url('/event_home') }}">Calender Of Event</a>
+                                {{-- <a class="text-decoration-none aboutus_btn" href="./about.html">Maps</a> --}}
                                 <a class="text-decoration-none aboutus_btn" href="{{ url('/login') }}">Login</a>
                             </div>
                             <figure class="banner_yellow_line mb-0">
@@ -106,319 +122,96 @@
             </div>
         </section>
     </div>
-    <!-- ABOUT US SECTION -->
-    <!-- <section class="aboutus_section">
-        <div class="container">
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="images_wrapper">
-                        <figure class="mb-0">
-                            <img src="images/aboutus_img_1.jpg" alt="" class="img-fluid img_one">
-                        </figure>
-                        <figure class="mb-0">
-                            <img src="images/aboutus_img_2.jpg" alt="" class="img-fluid img_two">
-                        </figure>
-                        <figure class="mb-0">
-                            <img src="images/aboutus_img_3.jpg" alt="" class="img-fluid img_three">
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="aboutus_content">
-                        <h6>ABOUT US</h6>
-                        <h2>Our Business is to Making Your life Easier & Comfortable</h2>
-                        <p>Quis ipsum suspendisse ultrices gravida risus coe maecenas accumsan lacus vel facilisis.</p>
-                        <h3 class="mb-0">01. How can we help your business?</h3>
-                        <p class="pp">Autem vel eum iure reprehenderit qui in ea voluptate velit esse ruam molestiae consequatur.</p>
-                        <h3 class="mb-0">02. Why become our partner?</h3>
-                        <p class="pp margin_bottom">Reprehenderit in voluptate velit esse cillum dolore eua fugiat nulla pariatur.</p>
-                        <div class="btn_wrapper"> 
-                            <a class="text-decoration-none readmore_btn" href="./about.html">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <figure class="aboutus_shape mb-0">
-                <img src="images/aboutus_shape.png" alt="" class="img-fluid">
-            </figure>
-        </div>
-    </section> -->
-    <!-- OUR SERVICES SECTION -->
-    <section class="services_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <!-- <div class="services_content">
-                        <h6>OUR SERVICES</h6>
-                        <h2>We Provide Best Virtual Assistant Services</h2>
-                        <p>Consectetur adipiscing elit sed do eiusmod tempor in labore et dolore magna aliqua ruis ipsum suspendisse ultrices gravida sit amet.</p>
-                        <ul class="list-unstyled">
-                            <li>
-                                <i class="fa fa-check" aria-hidden="true"></i>Quis autem vel eum iure reprehenderit aui
-                            </li>
-                            <li>
-                                <i class="fa fa-check" aria-hidden="true"></i>Suscipit laboriosam nisi rut aliuid eum iure
-                            </li>
-                            <li>
-                                <i class="fa fa-check" aria-hidden="true"></i>Dolor repellendus temporibus autem auibus
-                            </li>
-                        </ul>
-                        <div class="btn_wrapper"> 
-                            <a class="text-decoration-none get_started_btn" href="./services.html">Get Started</a>
-                        </div>
-                    </div> -->
-                    <div class="row" data-aos="fade-up">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="services_box_wrapper">
-                                <figure>
-                                    <img src="images/services_img_1.png" alt="" class="img-fluid">
-                                </figure>
-                                <h5>Destinasi</h5>
-                                <a href="./services.html">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="services_box_wrapper">
-                                <figure>
-                                    <img src="images/services_img_2.png" alt="" class="img-fluid">
-                                </figure>
-                                <h5>Kuliner</h5>
-                                <a href="./services.html">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="row" data-aos="fade-up">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="services_box_wrapper">
-                                <figure>
-                                    <img src="images/services_img_3.png" alt="" class="img-fluid">
-                                </figure>
-                                <h5>Event</h5>
-                                <a href="./services.html">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="services_box_wrapper">
-                                <figure>
-                                    <img src="images/services_img_4.png" alt="" class="img-fluid">
-                                </figure>
-                                <h5>Akomodasi</h5>
-                                <a href="./services.html">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="row" data-aos="fade-up">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="services_box_wrapper">
-                                <figure>
-                                    <img src="images/services_img_1.png" alt="" class="img-fluid">
-                                </figure>
-                                <h5>Peta Wisata</h5>
-                                <a href="./services.html">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="services_box_wrapper">
-                                <figure>
-                                    <img src="images/services_img_2.png" alt="" class="img-fluid">
-                                </figure>
-                                <h5>Info Wisata</h5>
-                                <a href="./services.html">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="row" data-aos="fade-up">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="services_box_wrapper">
-                                <figure>
-                                    <img src="images/services_img_3.png" alt="" class="img-fluid">
-                                </figure>
-                                <h5>Download</h5>
-                                <a href="./services.html">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <div class="services_box_wrapper">
-                                <figure>
-                                    <img src="images/services_img_4.png" alt="" class="img-fluid">
-                                </figure>
-                                <h5>Dinas</h5>
-                                <a href="./services.html">
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                </div>
-            </div>
-            <figure class="services_left_icon mb-0">
-                <img src="images/home_services_left_icon.png" alt="" class="img-fluid">
-            </figure>
-            <figure class="services_right_icon mb-0">
-                <img src="images/home_services_right_icon.png" alt="" class="img-fluid">
-            </figure>
-        </div>
-    </section>
-    <!-- OUR PROCESS SECTION -->
-    <!-- <section class="our_process_section" id="process">
-        <div class="container">
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="our_process-content">
-                        <h6>OUR PROCESS</h6>
-                        <h2>How Instant VA Process Works</h2>
-                        <p>Ronsectetur adipiscing elit sed do eiusmod tempor in labore et dolore magna aliqua suarendisse ultrices gravida amet.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row" data-aos="fade-up">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="our_process_box_content">
-                        <span class="process_box_heading">Tell us About Your Ideal Assistant</span>
-                        <span class="process_box_number">01</span>
-                        <p class="process_box_paragraph">Reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="our_process_box_content">
-                        <span class="process_box_heading">Meet & Approval Your Assistant</span>
-                        <span class="process_box_number">02</span>
-                        <p class="process_box_paragraph">Reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="our_process_box_content mb-0">
-                        <span class="process_box_heading launch_track_padding">Launch and Track</span>
-                        <span class="process_box_number">03</span>
-                        <p class="process_box_paragraph">Reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div>
-            </div>
-            <figure class="our_process_shape mb-0">
-                <img src="images/process_background.png" alt="" class="img-fluid" data-aos="fade-up">
-            </figure>
-        </div>
-    </section> -->
     <!-- VIRTUAL EMPLOYEE SECTION -->
-    <!-- <section class="virtual_employee-section" id="virtual_employee">
+    <section class="virtual_employee-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="virtual_employee_image">
                         <figure class="mb-0">
-                            <img src="images/virtual_employee_image.png" alt="" class="img-fluid">
+                            <img src="{{ url('') }}/images/virtual_employee_image.png" alt="" class="img-fluid">
                         </figure>
                     </div>
                     <figure class="virtual_employee_yellow_icon mb-0">
-                        <img src="images/virtual_employee_yellow_icon.png" alt="" class="img-fluid">
+                        <img src="{{ url('') }}/images/virtual_employee_yellow_icon.png" alt="" class="img-fluid">
                     </figure>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
-                    <div class="virtual_employee_content">
-                        <h6>VIRTUAL EMPLOYEE</h6>
-                        <h2>Find The Ultimate Virtual Assistant for Your Business</h2>
-                        <p>Eonsectetur adipiscing elit sed do eiusmod tempor in labore et dolore magna aliqua ruis ipsum suspendisse ultrices gravida sit amet.</p>
-                        <div class="btn_wrapper">
+                    <div class="virtual_employee_content_detail">
+                        <h6>Wisata Kulon Progo</h6>
+                        <h2>Apa Itu "Sambanggo" ?</h2>
+                        <p>
+                            Sambanggo atau sambang Kulon Progo adalah sebuah gerakan mengajak wisatawan untuk berkunjung atau menikmati berbagai obyek wisata yang ada di Kabupaten  Kulon Progo 
+                        </p>
+                        <p>
+                            Baik Sambang Gisik, Sambang Gawe, maupun Sambang Gunung.
+                        </p>
+                        <p>
+                            Sambang Gisik : wisatawan diajak mengunjungi destinasi wisata di wilayah sepanjang pantai Kulon Progo.  
+                        </p>
+                        <p>
+                            Sambang Gawe : wisatawan diajak mengunjungi atau menikmati berbagai produk ekonomi kreatif yang ada di Kulon Progo.
+                        </p>
+                        <p>
+                            Sambang Gunung : wisatawan diajak mengunjungi destinasi wisata yang ada di wilayah pegunungan atau perbukitan.
+                        </p>
+                        <p>
+                            Wisatawan juga dapat berkunjung ke berbagai destinasi wisata yang ada di Kulon Progo maupun ke 24 Desa Wisata.
+                        </p>
+                        <p>
+                            Ayo berkunjung ke Kulon Progo
+                            Sambanggo!!!
+                        </p>
+                        {{-- <div class="btn_wrapper">
                             <a class="text-decoration-none get_started_btn" href="./index.html">Get Started</a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
             <figure class="virtual_employee_left_icon mb-0">
-                <img src="images/virtual_employee_left_icon.png" alt="" class="img-fluid">
+                <img src="./assets/images/virtual_employee_left_icon.png" alt="" class="img-fluid">
             </figure>
             <figure class="virtual_employee_right_top_icon mb-0">
-                <img src="images/virtual_employee_right_top_icon.png" alt="" class="img-fluid">
+                <img src="./assets/images/virtual_employee_right_top_icon.png" alt="" class="img-fluid">
             </figure>
             <figure class="virtual_employee_right_bottom_icon mb-0">
-                <img src="images/virtual_employee_right_bottom_icon.png" alt="" class="img-fluid">
+                <img src="./assets/images/virtual_employee_right_bottom_icon.png" alt="" class="img-fluid">
             </figure>
             <figure class="virtual_employee_bottom_icon mb-0">
-                <img src="images/virtual_employee_bottom_icon.png" alt="" class="img-fluid">
+                <img src="./assets/images/virtual_employee_bottom_icon.png" alt="" class="img-fluid">
             </figure>
         </div>
-    </section> -->
+    </section>
     <!-- CASE STUDIES SECTION -->
     <section class="case_studies_section">
         <div class="container">
             <div class="row" data-aos="fade-up">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="case_studies-content">
-                        <h6>CASE STUDIES</h6>
-                        <h2>Our Recent Projects</h2>
-                        <p>Sonsectetur adipiscing elit sed do eiusmod tempor in labore et dolore magna aliqua suarendisse ultrices gravida amet.</p>
+                        <h6>Sambanggo</h6>
+                        <h2>Wisata Kulon Progo</h2>
+                        <p></p>
                     </div>
                 </div>
             </div>
             <div class="row" data-aos="fade-up">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="case_studies_image">
-                        <figure class="mb-0"><img src="images/bgadminLAMA.webp" alt="" class="img-fluid"></figure>
-                        <div class="case_studies_box">
-                            <h4>Wisata Alam</h4>
-                            <!-- <p>Dolores eos aui ratione seaui nesciunt</p> -->
-                            <a href="./projects.html">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
+                @foreach($categories as $category)
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="case_studies_image">
+                            <figure class="mb-0"><img src="{{ asset('storage/' . $category->foto) }}" alt="" class="img-fluid"></figure>
+                            <div class="case_studies_box">
+                                <h4>{{ $category->name }}</h4>
+                                <!-- <p>Dolores eos aui ratione seaui nesciunt</p> -->
+                                <a href="{{ url('') }}/wisata/{{ $category->id }}">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="case_studies_image">
-                        <figure class="mb-0"><img src="images/Penyu.jpg" alt="" class="img-fluid"></figure>
-                        <div class="case_studies_box">
-                            <h4>Wisata Pantai</h4>
-                            <!-- <p>Rolores aos eui ratione seaui nesciunt</p> -->
-                            <a href="./projects.html">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="case_studies_image">
-                        <figure class="mb-0"><img src="images/budaya.jpg" alt="" class="img-fluid"></figure>
-                        <div class="case_studies_box">
-                            <h4>Wisata Budaya</h4>
-                            <!-- <p>Solores nos cui ratione seaui nesciunt</p> -->
-                            <a href="./projects.html">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="case_studies_image">
-                        <figure class="mb-0"><img src="images/jib.jpg" alt="" class="img-fluid"></figure>
-                        <div class="case_studies_box">
-                            <h4>Wisata Minat Khusus</h4>
-                            <!-- <p>Solores nos cui ratione seaui nesciunt</p> -->
-                            <a href="./projects.html">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
             <div class="btn_wrapper">
-                <a class="text-decoration-none viewall_btn" href="./projects.html">View All</a>
+                <a class="text-decoration-none viewall_btn" href="http://103.135.180.16/pariwisata/wisata.html" target="_blank">Maps</a>
             </div>
             <figure class="case_studies_shape mb-0">
                 <img src="images/case_studies_shape.png" alt="" class="img-fluid" data-aos="fade-up">
