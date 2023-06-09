@@ -18,7 +18,9 @@
             <tr>
               <th scope="col">#</th>
               <th scope="col">Nama Event</th>
+              <th scope="col">Category</th>
               <th scope="col">Tanggal Event</th>
+              <th scope="col">Keterangan</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
@@ -27,7 +29,17 @@
             <tr>
               <td>{{ $loop->iteration }}</td>
               <td>{{ $event->event_name }}</td>
+              <td>
+                  @if ($event->category == "1")
+                    Sambang Gisik
+                  @elseif ($event->category == "2")
+                    Sambang Gawe
+                  @else
+                    Sambang Gunung
+                  @endif              
+              </td>
               <td>{{ $event->event_date }}</td>
+              <td>{!! $event->ket !!}</td>
               <td>
                 {{-- <a href="{{ url('') }}/dashboard/events/{{ $event->id }}" class="badge bg-info"><span data-feather="eye"></a> --}}
                 <a href="{{ url('') }}/dashboard/events/{{ $event->id }}/edit" class="badge bg-warning"><span data-feather="edit"></a>

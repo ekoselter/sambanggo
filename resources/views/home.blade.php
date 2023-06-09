@@ -62,7 +62,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-md-left text-center">
                         <div class="banner-section-content">
-                            <h1 data-aos="fade-up" style="color:#35cf20">Sambanggo</h1>
+                            {{-- <h1 data-aos="fade-up" style="color:#35cf20">Sambanggo</h1> --}}
+                            <img src="{{ url('') }}/images/logo_sambanggo.png" alt="" class="img-fluid">
                             <p data-aos="fade-right" style="color:#93eef8">
                                 {{-- Sambanggo atau sambang Kulon Progo adalah sebuah gerakan mengajak wisatawan untuk berkunjung atau menikmati berbagai obyek wisata yang ada di Kabupaten  Kulon Progo 
 
@@ -97,7 +98,7 @@
                             </figure> 
                         </div>
                         <figure class="banner_yellow_green_icon mb-0">
-                            <img src="images/gb1.png" alt="" class="img-fluid">
+                            {{-- <img src="images/gb1.png" alt="" class="img-fluid"> --}}
                         </figure>
                         <figure class="banner_white_circle_icon mb-0">
                             <img src="images/tari.png" alt="" class="img-fluid">
@@ -129,7 +130,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="virtual_employee_image">
                         <figure class="mb-0">
-                            <img src="{{ url('') }}/images/virtual_employee_image.png" alt="" class="img-fluid">
+                            <img src="{{ url('') }}/images/filosofi.jpg" alt="" class="img-fluid" style="border-radius: 2em">
                         </figure>
                     </div>
                     <figure class="virtual_employee_yellow_icon mb-0">

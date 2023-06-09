@@ -18,6 +18,14 @@
                 @enderror
             </div>
             <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" name="category">                 
+                    <option value="1" >Sambang Gisik</option>
+                    <option value="2" >Sambang Gawe</option>
+                    <option value="3" >Sambang Gunung</option>
+                </select>
+            </div>
+            <div class="mb-3">
                 <label for="event_date" class="form-label">Tanggal Event</label>
                 <input type="date" class="form-control @error('event_date') is-invalid @enderror" id="event_date" name="event_date" required autofocus value="{{ old('event_date') }}">
                 @error('event_date')
@@ -26,7 +34,7 @@
                     </div>
                 @enderror
             </div>
-            <div class="mb-3">
+            {{-- <div class="mb-3">
                 <label for="event_image" class="form-label">Event Image</label>
                 <img class="img-preview img- mb-3 col-sm-5">
                 <input class="form-control @error('event_image') is-invalid @enderror" type="file" id="event_image" name="event_image" onchange="previewImage()">
@@ -35,7 +43,7 @@
                         {{ $message }}
                     </div>
                 @enderror
-            </div>
+            </div> --}}
             <div class="mb-3">
                 <label for="ket" class="form-label">Detail</label>
                 @error('ket')                   

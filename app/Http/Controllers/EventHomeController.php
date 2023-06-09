@@ -15,13 +15,23 @@ class EventHomeController extends Controller
         ]);
     }
 
-    public function detail($id_event)
+    public function detail($category)
     {
         // dd($id);
-        $data = Event::where('id', $id_event)->get();
+        $data = Event::where('category', $category)->get();
+        if ($category == "1"){
+            $kategori = "Sambang Gisik";
+        }
+        elseif ($category == "2"){
+            $kategori = "Sambang Gawe";
+        }
+        else{
+            $kategori = "Sambang Gunung";
+        }
         // dd($data);
         return view('eventDetail', [
-            'event' => $data
+            'events' => $data,
+            'kategori' => $kategori
         ]);
     }
 

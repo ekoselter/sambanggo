@@ -8,31 +8,46 @@
 <section class="virtual_employee-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="virtual_employee_image">
-                    <figure class="mb-0">
-                        <img src="{{ asset('storage/' . $event[0]->event_image) }}" alt="" class="img-fluid">
-                    </figure>
+            <div class="table-responsive col-lg-8">
+                <h2>{{ $kategori }}</h2>
+                <div class="btn_wrapper mb-5">
+                    <a class="text-decoration-none get_started_btn" href="{{ url('/event_home') }}">Back</a>
                 </div>
-                <figure class="virtual_employee_yellow_icon mb-0">
-                    <img src="{{ asset('images/virtual_employee_yellow_icon.png') }}" alt="" class="img-fluid">
-                </figure>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-aos="fade-right">
-                <div class="virtual_employee_content_detail">
-                    {{-- <h6>Tanggal Event : {{ $event[0]->event_date }}</h6> --}}
-                    <a href="{{ url('') }}/event_home"><h6>semua event</h6></a>
-                    <h2>{{ $event[0]->event_name }}</h2>
-                    <p>
-                        {{-- <article class="my-3 fs-5"> --}}
-                            {!! $event[0]->ket !!}
-                        {{-- </article> --}}
-                    </p>
-                    <div class="btn_wrapper">
-                        <a class="text-decoration-none get_started_btn" href="{{ url('/') }}">Home</a>
-                    </div>
+                {{-- <a href="{{ url('') }}/dashboard/posts/create" class="btn btn-primary mb-3">Creat new post</a> --}}
+                  <table class="table table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nama Event</th>
+                        <th scope="col">Tanggal Event</th>
+                        <th scope="col">Keterangan</th>
+                        {{-- <th scope="col">Action</th> --}}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @foreach($events as $event)
+                      <tr>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $event->event_name }}</td>
+                        <td>{{ $event->event_date }}</td>
+                        <td>{!! $event->ket !!}</td>
+                        {{-- <td>
+                          <a href="{{ url('') }}/dashboard/posts/{{ $post->slug }}" class="badge bg-info"><span data-feather="eye"></a>
+                          <a href="{{ url('') }}/dashboard/posts/{{ $post->slug }}/edit" class="badge bg-warning"><span data-feather="edit"></a>
+                          <form action="{{ url('') }}/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
+                              @method('delete')
+                              @csrf
+                              <button class="badge bg-danger border-0" onclick="return confirm('Are you sure ?')"><span data-feather="x-circle"></button>
+                          </form>
+                          
+                        </td> --}}
+                      </tr>
+                      @endforeach
+                    </tbody>
+                  </table>
+                  
                 </div>
-            </div>
+
         </div>
         <figure class="virtual_employee_left_icon mb-0">
             <img src="{{ url('') }}/images/virtual_employee_left_icon.png" alt="" class="img-fluid">

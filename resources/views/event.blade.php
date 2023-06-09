@@ -22,20 +22,52 @@
         </div>
         <div class="row" data-aos="fade-up">
         
-            @foreach($events as $event)
+            {{-- @foreach($events as $event)
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="case_studies_image">
                         <figure class="mb-0"><img src="{{ asset('storage/' . $event->event_image) }}" alt="" class="img-fluid"></figure>
                         <div class="case_studies_box">
                             <h4>{{ $event->event_name }}</h4>
-                            {{-- <p>Dolores eos aui ratione seaui nesciunt</p> --}}
                             <a href="{{ url('') }}/event_home/{{ $event->id }}">
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-            @endforeach
+            @endforeach --}}
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="case_studies_image">
+                    {{-- <figure class="mb-0"><img src="{{ asset('storage/' . $event->event_image) }}" alt="" class="img-fluid"></figure> --}}
+                    <div class="case_studies_box">
+                        <h4>Sambang Gisik</h4>
+                        <a href="{{ url('') }}/event_home/1">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="case_studies_image">
+                    {{-- <figure class="mb-0"><img src="{{ asset('storage/' . $event->event_image) }}" alt="" class="img-fluid"></figure> --}}
+                    <div class="case_studies_box">
+                        <h4>Sambang Gawe</h4>
+                        <a href="{{ url('') }}/event_home/2">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="case_studies_image">
+                    {{-- <figure class="mb-0"><img src="{{ asset('storage/' . $event->event_image) }}" alt="" class="img-fluid"></figure> --}}
+                    <div class="case_studies_box">
+                        <h4>Sambang Gunung</h4>
+                        <a href="{{ url('') }}/event_home/3">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <figure class="projects_case_studies_shape mb-0">
             <img src="./assets/images/projects_case_studies_shape.png" alt="" class="img-fluid" data-aos="fade-up">

@@ -19,6 +19,24 @@
                 @enderror
             </div>
             <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" name="category"> 
+                    @if ($event->category == "1")                   
+                        <option value="1" selected>Sambang Gisik</option>
+                        <option value="2" >Sambang Gawe</option>
+                        <option value="3" >Sambang Gunung</option>
+                    @elseif ($event->category == "2") 
+                        <option value="1" >Sambang Gisik</option>
+                        <option value="2" selected>Sambang Gawe</option>
+                        <option value="3" >Sambang Gunung</option>
+                    @else 
+                        <option value="1" >Sambang Gisik</option>
+                        <option value="2" >Sambang Gawe</option>
+                        <option value="3" selected>Sambang Gunung</option> 
+                    @endif
+                </select>
+            </div>
+            <div class="mb-3">
                 <label for="event_date" class="form-label">Tanggal Event</label>
                 <input type="date" class="form-control @error('event_date') is-invalid @enderror" id="event_date" name="event_date" required autofocus value="{{ old('event_date', $event->event_date) }}">
                 @error('event_date')
@@ -27,7 +45,7 @@
                     </div>
                 @enderror
             </div>
-            <div class="mb-3">
+            {{-- <div class="mb-3">
                 <label for="event_image" class="form-label">Event Image</label>
                 @if($event->event_image)
                     <img src="{{ asset('storage/' . $event->event_image) }}" class="img-preview img- mb-3 col-sm-5 d-block">
@@ -40,7 +58,7 @@
                         {{ $message }}
                     </div>
                 @enderror
-            </div>
+            </div> --}}
             <div class="mb-3">
                 <label for="ket" class="form-label">Detail</label>
                 @error('ket')                   

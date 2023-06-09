@@ -41,6 +41,7 @@ class EventController extends Controller
     {
         $validatedData = $request->validate([
             'event_name' => 'required|max:255',
+            'category' => 'required',
             'event_image' => 'image|file|max:4000',
             'ket' => 'required'
         ]);
@@ -90,6 +91,7 @@ class EventController extends Controller
     {
         $rules = [
             'event_name' => 'required|max:255',
+            'category' => 'required',
             'event_image' => 'image|file|max:4000',
             'ket' => 'required'
         ];
