@@ -12,6 +12,7 @@ use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\DashboardPostController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventHomeController;
+use App\Http\Controllers\MapWisataController;
 
 
 /*
@@ -33,6 +34,7 @@ use App\Http\Controllers\EventHomeController;
 // });
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/mapWisata', [MapWisataController::class, 'index']);
 Route::get('/wisata/{id}', [WisataController::class, 'index']);
 Route::get('/wisata/detail/{id}', [WisataController::class, 'detail']);
 
@@ -88,3 +90,7 @@ Route::resource('/dashboard/kategoris', kategoriController::class)->middleware('
 Route::resource('/dashboard/events', EventController::class)->middleware('auth');
 Route::get('/event_home', [EventHomeController::class, 'index']);
 Route::get('/event_home/{id}', [EventHomeController::class, 'detail']);
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});

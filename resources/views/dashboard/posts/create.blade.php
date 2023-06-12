@@ -39,7 +39,7 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="image" class="form-label">Post Image</label>
+                <label for="image" class="form-label">Post Image (Width:540px x Height:405px)</label>
                 <img class="img-preview img- mb-3 col-sm-5">
                 <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" onchange="previewImage()">
                 @error('image')

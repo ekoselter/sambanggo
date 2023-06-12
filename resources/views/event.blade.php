@@ -35,7 +35,7 @@
                     </div>
                 </div>
             @endforeach --}}
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <!-- <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="case_studies_image">
                     {{-- <figure class="mb-0"><img src="{{ asset('storage/' . $event->event_image) }}" alt="" class="img-fluid"></figure> --}}
                     <div class="case_studies_box">
@@ -67,7 +67,56 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <div class="table-responsive col-lg-12">
+            {{-- <h2>{{ $kategori }}</h2> --}}
+                <div class="btn_wrapper mb-5">
+                    <!-- <a class="text-decoration-none get_started_btn" href="{{ url('/event_home') }}">Back</a> -->
+                </div>
+                {{-- <a href="{{ url('') }}/dashboard/posts/create" class="btn btn-primary mb-3">Creat new post</a> --}}
+                  <table class="table table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nama Event</th>
+                        <th scope="col">Tanggal Event</th>
+                        <th scope="col">Keterangan</th>
+                        <th scope="col">Kategori</th>
+                        {{-- <th scope="col">Action</th> --}}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @foreach($events as $event)
+                      <tr>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $event->event_name }}</td>
+                        <td>{{ $event->event_date }}</td>
+                        <td>{!! $event->ket !!}</td>
+                        {{-- <td>
+                          <a href="{{ url('') }}/dashboard/posts/{{ $post->slug }}" class="badge bg-info"><span data-feather="eye"></a>
+                          <a href="{{ url('') }}/dashboard/posts/{{ $post->slug }}/edit" class="badge bg-warning"><span data-feather="edit"></a>
+                          <form action="{{ url('') }}/dashboard/posts/{{ $post->slug }}" method="post" class="d-inline">
+                              @method('delete')
+                              @csrf
+                              <button class="badge bg-danger border-0" onclick="return confirm('Are you sure ?')"><span data-feather="x-circle"></button>
+                          </form>
+                          
+                        </td> --}}
+                        <td>
+                            @if ( $event->category == "1" )
+                                Sambang Gisik
+                            @elseif ( $event->category == "2" )
+                                Sambang Gawe
+                            @else
+                                Sambang Gunung
+                            @endif
+                        </td>
+                      </tr>
+                      @endforeach
+                    </tbody>
+                  </table>
+                  
+                </div>
         </div>
         <figure class="projects_case_studies_shape mb-0">
             <img src="./assets/images/projects_case_studies_shape.png" alt="" class="img-fluid" data-aos="fade-up">

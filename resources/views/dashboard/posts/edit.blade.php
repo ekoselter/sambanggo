@@ -40,7 +40,7 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="image" class="form-label">Post Image</label>
+                <label for="image" class="form-label">Post Image (Width:540px x Height:405px)</label>
 
                 @if($post->image)
                     <img src="{{ asset('storage/' . $post->image) }}" class="img-preview img- mb-3 col-sm-5 d-block">

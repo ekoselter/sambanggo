@@ -1,0 +1,23 @@
+SAMBANGGO
+
+masuk ke CPANEL :
+	sambanggo.kulonprogokab.go.id/cpanel
+	u: sambanggo
+	p:52v(g,4xxz;I
+
+DATABASE :
+	nama database : sambanggo_database
+	u: sambanggo
+	p:52v(g,4xxz;I
+
+langkah hosting :
+1. import database ke hosting
+2. buat zip dan upload ke hosting
+3. extrack di hostingnya
+4. edit file .env rubah setting URL dan database
+5. pindahkan file public ke public_html dan yang lainnya pindahkan ke folder laravel dan pindahkan foder laravel ke root (alau masih bingung cek tutorial pak sandika : https://www.youtube.com/watch?v=wNmgAm9xvwk&t=520s)
+6. edit file index : 
+	- baris 34 "require __DIR__.'/../vendor/autoload.php' " ubah menjadi " require __DIR__.'/../laravel/vendor/autoload.php' "
+	- baris 47 "$app = require_once __DIR__.'/../bootstrap/app.php' " ubah menjadi "$app = require_once __DIR__.'/../laravel/bootstrap/app.php' "
+7. buat symplink (shorcut folder storage) agar bisa diakses public dengan menjalankan route /linkstorage (cara ini hanya bisa di CPANEL, kalau di server paragoncity pakai php artisan storage:link melalui putty atau MobaXterm
+8. done

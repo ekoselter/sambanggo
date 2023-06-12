@@ -27,7 +27,7 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="foto" class="form-label">Foto Kategori</label>
+                <label for="foto" class="form-label">Foto Kategori (Width:255px x Height:167px)</label>
                 <img class="img-preview img- mb-3 col-sm-5">
                 <input class="form-control @error('foto') is-invalid @enderror" type="file" id="foto" name="foto" onchange="previewImage()">
                 @error('foto')

@@ -28,7 +28,7 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="foto" class="form-label">Foto Kategori</label>
+                <label for="foto" class="form-label">Foto Kategori  (Width:255px x Height:167px)</label>
 
                 @if($category[0]->foto)
                     <img src="{{ asset('storage/' . $category[0]->foto) }}" class="img-preview img- mb-3 col-sm-5 d-block">

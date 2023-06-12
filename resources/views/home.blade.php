@@ -130,7 +130,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="virtual_employee_image">
                         <figure class="mb-0">
-                            <img src="{{ url('') }}/images/filosofi.jpg" alt="" class="img-fluid" style="border-radius: 2em">
+                            <img src="{{ url('') }}/images/filosofi.JPG" alt="" class="img-fluid" style="border-radius: 2em">
                         </figure>
                     </div>
                     <figure class="virtual_employee_yellow_icon mb-0">
@@ -212,7 +212,7 @@
                 @endforeach
             </div>
             <div class="btn_wrapper">
-                <a class="text-decoration-none viewall_btn" href="http://103.135.180.16/pariwisata/wisata.html" target="_blank">Maps</a>
+                <a class="text-decoration-none viewall_btn" href="{{ url('/mapWisata') }}" target="_blank">Maps</a>
             </div>
             <figure class="case_studies_shape mb-0">
                 <img src="images/case_studies_shape.png" alt="" class="img-fluid" data-aos="fade-up">
@@ -355,8 +355,8 @@
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                     <div class="send_message_box_content">
-                        <h6>READY TO</h6>
-                        <h2>Get Started With Us</h2>
+                        <h6>MORE INFO</h6>
+                        <h2>Tourism Information Center</h2>
                         <div class="btn_wrapper">
                             <a class="text-decoration-none get_started_btn" href="./index.html">Get Started</a>
                         </div>
@@ -420,7 +420,7 @@
         </div>
     </section>
     <!-- SIGN UP SECTION -->
-    <div class="sign_up-section">
+    {{-- <div class="sign_up-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
@@ -449,9 +449,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- FOOTER SECTION -->
-    <section class="footer-section">
+    {{-- <section class="footer-section">
         <div class="container">
             <div class="middle-portion">
                 <div class="row">
@@ -543,5 +543,5 @@
         <div class="footer_logo">
             <figure class="mb-0"><img src="images/footer_logo.png" alt="" class="img-fluid"></figure>
         </div>
-    </section>
+    </section> --}}
 @endsection
