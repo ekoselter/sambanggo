@@ -362,46 +362,26 @@
                         </div>
                         <i class="fa-solid fa-headphones"></i>
                         <span class="call_us d-block">Call us Today:</span>
-                        <span class="phone_num">000 8596 256</span>
+                        <span class="phone_num">0857 0244 5xxx</span>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                     <div class="send_message_form_box_content">
-                        <h6>SEND US A MESSAGE</h6>
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group mb-0">    
-                                    <input type="text" class="form_style" placeholder="Name" name="name"> 
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group mb-0">
-                                    <input type="email" class="form_style" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group mb-0">    
-                                    <input type="tel" class="form_style" placeholder="Phone"> 
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="form-group mb-0">    
-                                    <input type="text" class="form_style" placeholder="Subject"> 
-                                    </div>
+                        <h6>SCAN ME</h6>
+                    <form>
+                        <div class="row text-center">
+                            <div class="col-lg-12">
+                                <div class=" form-group mb-0">    
+                                    <figure class="mb-0" >
+                                        {{-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">                            --}}
+                                            <img src="{{ url('') }}/images/kontak_info.png" alt="" class="img-fluid" style="border-radius: 1em;height:200px;width:200px;" >
+                                        {{-- </div> --}}
+                                    </figure>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class=" form-group mb-0">    
-                                    <textarea class="form_style" placeholder="Message" rows="3" name="comments"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form_button_wrapper text-center">
-                                <button type="submit" class="appointment-btn">Submit Now</button>
-                            </div>
-                        </form>
+                        </div>
+                        
+                    </form>
                     </div>
                     <figure class="send_message_yellow_icon mb-0">
                         <img src="images/send_message_yellow_icon.png" alt="" class="img-fluid">

@@ -25,7 +25,11 @@
             @foreach($posts as $post)
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="case_studies_image">
-                        <figure class="mb-0"><img src="{{ asset('storage/' . $post->image) }}" alt="" class="img-fluid"></figure>
+                        @if ($post->image)
+                            <figure class="mb-0"><img src="{{ asset('storage/' . $post->image) }}" alt="" class="img-fluid"></figure>
+                        @else
+                            <figure class="mb-0"><img src="{{ asset('images/no_image.jpg') }}" alt="" class="img-fluid"></figure>
+                        @endif
                         <div class="case_studies_box">
                             <h4>{{ $post->title }}</h4>
                             {{-- <p>Dolores eos aui ratione seaui nesciunt</p> --}}
