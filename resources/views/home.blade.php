@@ -101,7 +101,7 @@
                             {{-- <img src="images/gb1.png" alt="" class="img-fluid"> --}}
                         </figure>
                         <figure class="banner_white_circle_icon mb-0">
-                            <img src="images/tari.png" alt="" class="img-fluid">
+                            {{-- <img src="images/tari.png" alt="" class="img-fluid"> --}}
                         </figure>
                     </div>
                 </div>
