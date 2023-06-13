@@ -48,7 +48,7 @@
 </section>
    
     <!-- SIGN UP SECTION -->
-    <div class="sign_up-section">
+    {{-- <div class="sign_up-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
@@ -170,6 +170,10 @@
         </div>
         <div class="footer_logo">
             <figure class="mb-0"><img src="images/footer_logo.png" alt="" class="img-fluid"></figure>
-        </div>
+        </div> --}}
     </section>
+
+    <div class="d-flex justify-content-center">
+        {{ $posts->links() }}
+    </div>
 @endsection

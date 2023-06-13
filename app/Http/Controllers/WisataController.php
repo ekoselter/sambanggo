@@ -12,7 +12,7 @@ class WisataController extends Controller
     public function index($id_kategori)
     {
         // dd($id);
-        $data = Post::where('category_id', $id_kategori)->get();
+        $data = Post::where('category_id', $id_kategori)->paginate(20)->withQueryString();
         $kategori = Category::where('id',$id_kategori)->get();
         // dd($data);
         return view('wisata', [

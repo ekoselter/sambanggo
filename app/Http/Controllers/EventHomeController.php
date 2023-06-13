@@ -9,7 +9,7 @@ class EventHomeController extends Controller
     public function index()
     {
         // dd($id);
-        $data = Event::orderby('event_date', 'DESC')->get();
+        $data = Event::orderby('event_date', 'DESC')->paginate(20)->withQueryString();
         return view('event', [
             'events' => $data,
         ]);

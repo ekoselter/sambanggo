@@ -362,7 +362,7 @@
                         </div>
                         <i class="fa-solid fa-headphones"></i>
                         <span class="call_us d-block">Call us Today:</span>
-                        <span class="phone_num">0857 0244 5xxx</span>
+                        <span class="phone_num">(0274) 773095</span>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">

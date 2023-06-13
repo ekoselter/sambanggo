@@ -88,9 +88,9 @@
                     <tbody>
                       @foreach($events as $event)
                       <tr>
-                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $events->firstItem() + $loop->index }}</td>
                         <td>{{ $event->event_name }}</td>
-                        <td>{{ $event->event_date }}</td>
+                        <td>{{ \Carbon\Carbon::parse($event->event_date)->format('d/m/Y') }}</td>
                         <td>{!! $event->ket !!}</td>
                         {{-- <td>
                           <a href="{{ url('') }}/dashboard/posts/{{ $post->slug }}" class="badge bg-info"><span data-feather="eye"></a>
@@ -125,7 +125,7 @@
 </section>
    
     <!-- SIGN UP SECTION -->
-    <div class="sign_up-section">
+    {{-- <div class="sign_up-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
@@ -248,5 +248,10 @@
         <div class="footer_logo">
             <figure class="mb-0"><img src="images/footer_logo.png" alt="" class="img-fluid"></figure>
         </div>
-    </section>
+    </section> --}}
+
+    {{-- pagination --}}
+    <div class="d-flex justify-content-center">
+        {{ $events->links() }}
+    </div>
 @endsection
