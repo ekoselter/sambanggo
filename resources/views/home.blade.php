@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    <div class="banner-section-outer">
+    <div class="banner-section-outer" id="wisata">
         <header>
             <!-- <div class="main_header">
                 <div class="container-fluid">
@@ -358,7 +358,7 @@
                         <h6>MORE INFO</h6>
                         <h2>Tourism Information Center</h2>
                         <div class="btn_wrapper">
-                            <a class="text-decoration-none get_started_btn" href="./index.html">Get Started</a>
+                            <a class="text-decoration-none get_started_btn" href="#wisata">Get Started</a>
                         </div>
                         <i class="fa-solid fa-headphones"></i>
                         <span class="call_us d-block">Call us Today:</span>
