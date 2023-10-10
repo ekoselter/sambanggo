@@ -10,6 +10,7 @@ use App\Http\Controllers\kategoriController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\DashboardPostController;
+use App\Http\Controllers\DashboardPasswController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\EventHomeController;
 use App\Http\Controllers\MapWisataController;
@@ -90,6 +91,9 @@ Route::resource('/dashboard/kategoris', kategoriController::class)->middleware('
 Route::resource('/dashboard/events', EventController::class)->middleware('auth');
 Route::get('/event_home', [EventHomeController::class, 'index']);
 Route::get('/event_home/{id}', [EventHomeController::class, 'detail']);
+
+// ubah password
+Route::resource('/dashboard/passw', DashboardPasswController::class)->middleware('auth');
 
 Route::get('/linkstorage', function () {
     Artisan::call('storage:link');

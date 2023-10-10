@@ -25,6 +25,12 @@
               Categories
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link {{ Request::is('dashboard/passw*') ? 'active' : ''  }}" href="{{ url('') }}/dashboard/passw">
+              <span data-feather="users"></span>
+              Ubah Password
+            </a>
+          </li>
         </ul>
 
         {{-- @can('admin')       
